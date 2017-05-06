@@ -9,13 +9,13 @@ import argparse,sys
 from flask import Flask,request,render_template
 from werkzeug import secure_filename
 import os
-from flask.ext.cors import CORS, cross_origin
+# from flask.ext.cors import CORS, cross_origin
 
 
 
 app = Flask(__name__,static_url_path = "/static", static_folder = "static")
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+# cors = CORS(app)
+# app.config['CORS_HEADERS'] = 'Content-Type'
 
 app.config['UPLOAD_FOLDER'] = './static'
 # app.config['static'] = './static';
@@ -91,7 +91,7 @@ def Predict_Emotion(filename):
         features= numpy.asarray(features)
 
         print "Performing PCA Transform......."
-        pca_features=pca.transform(features)
+        # pca_features=pca.transform(features)
         # print(pca_features)
 
         print "Predicting using trained model........"
