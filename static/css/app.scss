@@ -1,0 +1,27 @@
+#logo {
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  margin-right: 10px;
+}
+
+.face-col {
+  img {
+    width: 100%;
+  }
+}
+
+.result-col {
+  pre {
+    height: 560px;
+    overflow: scroll;
+  }
+}
+
+.file-row {
+  margin: 0;
+  input {
+    display: inline-block;
+  }
+}
